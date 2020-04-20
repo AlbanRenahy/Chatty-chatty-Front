@@ -1,25 +1,51 @@
 // imports npm
 import React from 'react';
-import logo from '../../data/logo.png'
 
- // imports styles
-import { FaUserAlt, FaRegCommentDots } from "react-icons/fa";
-
- // imports local
+// imports local
 import './nav.scss';
+import logo from '../../data/logo.png';
+import { MdAccountCircle, MdChat, MdArrowBack, MdArrowForward, MdClose } from 'react-icons/md';
+import { Navbar } from 'react-bootstrap';
 
- // Component
-const Nav = () => {
+// Component
+const Nav = () => (
+  <>
+    {/* Main Nav with user and matchs icons */}
+    <Navbar expand={false} className="chattychatty">
+      <Navbar.Text className="icon"><MdAccountCircle /></Navbar.Text>
+      <Navbar.Text className="chattychatty-logo">Chatty Chatty</Navbar.Text>
+      <Navbar.Text className="icon"><MdChat /></Navbar.Text>
+    </Navbar>
+    {/* Nav for the my profil / Matchs preferences with back button left */}
+    <Navbar className="chattychatty">
+      <Navbar.Collapse className="justify-content-start">
+        <Navbar.Text className="icon"><MdArrowBack /></Navbar.Text>
+      </Navbar.Collapse>
+      <Navbar.Collapse>
+        <Navbar.Text>Match</Navbar.Text>
+      </Navbar.Collapse>
+    </Navbar>
+    {/* Nav for my profil edition with back button right */}
+    <Navbar className="chattychatty">
+      <Navbar.Collapse className="justify-content-right">
+        <Navbar.Text className="navbar-title">Mon profil</Navbar.Text>
+      </Navbar.Collapse>
+      <Navbar.Collapse className="justify-content-end">
+        <Navbar.Text className="icon"><MdArrowForward /></Navbar.Text>
+      </Navbar.Collapse>
+    </Navbar>
+    {/* Nav with close button right */}
+    <Navbar className="chattychatty">
+      <Navbar.Collapse className="justify-content-end">
+        <Navbar.Text className="icon"><MdClose /></Navbar.Text>
+      </Navbar.Collapse>
+    </Navbar>
+    {/* Nav with close button left */}
+    <Navbar className="chattychatty">
+      <Navbar.Text className="icon"><MdClose /></Navbar.Text>
+    </Navbar>
+  </>
+);
 
-   return (
-        <div className="navbar">
-            <div className="navbar-item"><FaUserAlt /></div>
-            <img alt="Chatty-Chatty" src={logo}/>
-            <div className="navbar-item"><FaRegCommentDots /></div>
-        </div>
-    )
-};
-
-
- // export
-export default Nav; 
+// export
+export default Nav;

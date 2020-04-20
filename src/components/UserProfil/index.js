@@ -3,6 +3,7 @@ import React from 'react';
 
  // == Import : local
 import './user-profil.scss';
+import { Navbar } from 'react-bootstrap';
 
  // == Import : style
 
@@ -11,7 +12,9 @@ import './user-profil.scss';
  // == Composant
 const UserProfil = () => (
   <div className="user-profil">
-    User Profil Page
+    <Navbar bg="dark">
+      User Profil Page
+    </Navbar>
   </div>
 );
 

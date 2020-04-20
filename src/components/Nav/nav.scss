@@ -1,40 +1,31 @@
 @import '../../styles/vars';
 
 
- // All the NavBar
-.navbar  {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0;
+// All the NavBar
+.chattychatty  {
     background-color: $primaryColorLight;
-    border-radius: 5px;
-
-     @media (max-width: $lg) {
-    height: 3rem;
+    color: $textColor;
+    .navbar{
+      &-text {
+        color: rgba($textColor, .5) !important;
+        margin: 0 !important;
+        font-size: 1.2em;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
     }
-
-     @media (min-width: $lg) {
-    height: 5rem;
+    .navbar-title{
+      display: block;
+      width: 100%;
+      text-align: right;
     }
-            // Items like icons in the NavBar
-            &-item {
-                color: $textColor;
-                font-size: 1.5rem;
-                margin: 1rem;
-
-                 @media (min-width: 1250px) {
-                font-size: 2rem;
-                }
-            }
-}
-
- // Logo of ChattyChatty in the NavBar
-img {
-    margin: 0;
-    height: 2.5em;
-
-     @media (min-width: $lg) {
-        height: 4rem;
-        }
-} 
+    .icon{
+      font-size: 2.25rem;
+    }
+    .chattychatty-logo{
+      font-weight: 700;
+      background: linear-gradient(to right, rgb(255, 238, 0), rgb(255, 124, 17), rgb(255, 0, 221));
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
