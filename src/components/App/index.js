@@ -8,13 +8,15 @@ import './app.scss';
 
 // Import locaux
 // import Nav from '../../components/Nav';
-import HomePage from '../../components/HomePage';
+//import HomePage from '../../components/HomePage';
+import UserProfil from '../../components/UserProfil';
 
 // == Composant
 const App = () => (
   <div className="app">
     {/* <Nav /> */}
-    <HomePage />
+    {/* <HomePage /> */}
+    <UserProfil />
   </div>
 );
 

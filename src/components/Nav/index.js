@@ -14,7 +14,7 @@ const Nav = () => {
    return (
         <div className="navbar">
             <div className="navbar-item"><FaUserAlt /></div>
-            <img src={logo}/>
+            <img alt="Chatty-Chatty" src={logo}/>
             <div className="navbar-item"><FaRegCommentDots /></div>
         </div>
     )
