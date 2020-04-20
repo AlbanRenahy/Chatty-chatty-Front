@@ -8,7 +8,7 @@ import { Navbar } from 'react-bootstrap';
 
  const NavCloseLeft = () => (
   <Navbar className="chattychatty">
-    <Navbar.Text className="icon"><MdClose /></Navbar.Text>
+    <Navbar.Text className="icon" onClick={(e) => {console.log('>>> Close Button', e)}}><MdClose /></Navbar.Text>
   </Navbar>
 );
 

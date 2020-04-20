@@ -9,7 +9,7 @@ import { Navbar } from "react-bootstrap";
 const NavBackLeft = () => (
   <Navbar className="chattychatty">
     <Navbar.Collapse className="justify-content-start">
-      <Navbar.Text className="icon">
+      <Navbar.Text className="icon" onClick={(e) => {console.log('>>> Back Button', e)}}>
         <MdArrowBack />
       </Navbar.Text>
     </Navbar.Collapse>

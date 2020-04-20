@@ -9,7 +9,7 @@ import { Navbar } from 'react-bootstrap';
  const NavCloseRight = () => (
   <Navbar className="chattychatty">
     <Navbar.Collapse className="justify-content-end">
-      <Navbar.Text className="icon"><MdClose /></Navbar.Text>
+      <Navbar.Text className="icon" onClick={(e) => {console.log('>>> Close Button', e)}}><MdClose /></Navbar.Text>
     </Navbar.Collapse>
   </Navbar>
 );
