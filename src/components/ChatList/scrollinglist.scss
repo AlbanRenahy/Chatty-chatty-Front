@@ -1,0 +1,35 @@
+@import '../../styles/vars';
+
+.scrolling-wrapper {
+    background-color: $primaryColor;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    height: 120px;
+  
+     & .user-card {
+      flex: 0 0 auto;
+      margin: .6rem;
+      width: 100px;
+      height: 100px;  
+   }
+
+   @media (min-width: $md) {
+    & .user-card {
+      width: 125px;
+    }
+  }
+
+   @media (min-width: $lg) {
+    & .user-card {
+      width: 150px;
+      margin: .8rem;
+    }
+    }
+  }
+  
+   // remove scrollbar but keep content scrollable
+  ::-webkit-scrollbar {
+    display: none;
+  }
