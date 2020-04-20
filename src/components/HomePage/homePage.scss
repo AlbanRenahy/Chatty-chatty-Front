@@ -1,0 +1,41 @@
+@import '../../styles/vars';
+
+ .mainHome {
+  padding: 1rem 0 0.2rem 0;
+  color: rgba(0, 0, 0, 0.692);
+  background-size: cover;
+
+
+   h1 {
+    color: #1A1647;
+    font-size: 4em;
+  }
+
+   h2 {
+    font-weight: bold;
+  }
+
+   h3 {
+    font-size: 1em;
+  }
+
+   p {
+    padding: 11rem 0 0 0;
+    color: rgb(0, 0, 0);
+  }
+}
+
+ .footerHome {
+  padding: 0 0 0.5rem 0;
+  color: rgb(56, 56, 56);
+
+   h2 {
+    padding: 1rem 0 1rem 0;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+   p {
+    font-size: 0.8em;
+  }
+}  
