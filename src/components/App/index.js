@@ -7,12 +7,14 @@ import './app.scss';
 // == Import : style
 
 // Import locaux
-import Nav from '../../components/Nav';
+// import Nav from '../../components/Nav';
+import HomePage from '../../components/HomePage';
 
 // == Composant
 const App = () => (
   <div className="app">
-    <Nav />
+    {/* <Nav /> */}
+    <HomePage />
   </div>
 );
 
