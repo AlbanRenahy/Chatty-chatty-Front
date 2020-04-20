@@ -4,10 +4,15 @@ import React from 'react';
 // == Import : local
 import './app.scss';
 
+// == Import : style
+
+// Import locaux
+import Nav from '../../components/Nav';
+
 // == Composant
 const App = () => (
-  <div id="app">
-    Hello World !
+  <div className="app">
+    <Nav />
   </div>
 );
 

@@ -7,7 +7,9 @@ import { Provider } from 'react-redux';
 // == Import : local
 import App from '../src/components/App';
 import store from '../src/store';
-import './index.css';
+
+// == Import : Bootstrap Css
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // == Render
 const rootComponent = (
