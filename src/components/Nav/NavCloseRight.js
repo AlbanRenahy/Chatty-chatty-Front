@@ -11,7 +11,7 @@ const NavCloseRight = ({ title }) => (
   <Navbar className="chattychatty">
     <Navbar.Collapse className="justify-content-right">
       <Navbar.Text
-        className="navbar-title padding-right"
+        className="navbar-title padding-right text-truncate"
         onClick={(e) => {
           console.log(">>> Back Button", e);
         }}

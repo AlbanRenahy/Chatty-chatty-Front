@@ -9,18 +9,20 @@ import './app.scss';
 // Import locaux
 // import Nav from '../../components/Nav';
 // import HomePage from '../../components/HomePage';
-import UserProfil from '../../components/UserProfil';
+// import UserProfil from '../../components/UserProfil';
 // import ChatList from '../ChatList';
 // import MessagesList from '../ChatList/MessagesList';
+import EditUserProfil from '../UserProfil/EditUserProfil';
 
 // == Composant
 const App = () => (
   <div className="app">
     {/* <HomePage /> */}
-    <UserProfil />
+    {/* <UserProfil /> */}
     {/* <Nav /> */}
-    {/* <ChatList />
-    <MessagesList /> */}
+    {/* <ChatList /> */}
+    {/* <MessagesList /> */}
+    <EditUserProfil />
   </div>
 );
 
