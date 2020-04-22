@@ -12,7 +12,8 @@ import './app.scss';
 // import UserProfil from '../../components/UserProfil';
 // import ChatList from '../ChatList';
 // import MessagesList from '../ChatList/MessagesList';
-import EditUserProfil from '../UserProfil/EditUserProfil';
+// import EditUserProfil from '../UserProfil/EditUserProfil';
+import MatchingContainer from '../../containers/MatchingContainer';
 
 // == Composant
 const App = () => (
@@ -22,7 +23,8 @@ const App = () => (
     {/* <Nav /> */}
     {/* <ChatList /> */}
     {/* <MessagesList /> */}
-    <EditUserProfil />
+    {/* <EditUserProfil /> */}
+    <MatchingContainer />
   </div>
 );
 
