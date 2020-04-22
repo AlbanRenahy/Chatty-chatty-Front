@@ -1,35 +1,47 @@
 // == Initial State
 import messageData from "../../data/messages"; // data
 
+import { getMaxId } from "../../store/selectors";
+
 const initialState = {
   messages: messageData,
+  messageValue: "",
 };
 
 // == Types
-const DO_SOMETHING = "DO_SOMETHING";
+const CHANGE_MESSAGE = "CHANGE_MESSAGE";
+const ADD_MESSAGE = "ADD_MESSAGE";
 
 const chatroom = (state = initialState, action = {}) => {
   switch (action.type) {
-    case DO_SOMETHING:
+    case CHANGE_MESSAGE:
       return {
         ...state,
-        message: action.message,
+        messageValue: action.value,
       };
+    case ADD_MESSAGE: {
+      const maxId = getMaxId(state.messages);
+      const newMessage = {
+        text: state.messageValue,
+        id: maxId + 1,
+      };
+      return {
+        ...state,
+        messages: [...state.messages, newMessage],
+        messageValue: "",
+      };
+    }
 
     default:
       return state;
   }
 };
 
-// // == Action Creators
-// export const doSomething = message => ({
-//   type: DO_SOMETHING,
-//   message,
-// });
+export const addMessage = () => ({
+  type: ADD_MESSAGE,
+});
 
+// // == Selectors
 
- // // == Selectors
-
-
- // == Export
- export default chatroom;
+// == Export
+export default chatroom;

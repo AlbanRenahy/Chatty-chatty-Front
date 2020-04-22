@@ -15,7 +15,7 @@ import './app.scss';
 // import MessagesList from '../ChatList/MessagesList';
 // import EditUserProfil from '../UserProfil/EditUserProfil';
 // import MatchingContainer from '../../containers/MatchingContainer';
-import Form from '../../components/ChatRoom/Form';
+import Form from '../../containers/ChatRoom/Form';
 import Messages from '../../containers/ChatRoom/Messages';
 
 
