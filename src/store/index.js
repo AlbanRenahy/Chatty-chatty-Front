@@ -3,14 +3,14 @@ import { createStore, compose, applyMiddleware } from 'redux';
 
 // == Import : local
 import reducer from './reducer/index.js';
-import logMiddleware from './middlewares/logMiddleware.js';
+import matchingMiddleware from './middlewares/matchingMiddleware.js.js';
 
 // == Store
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const enhancers = composeEnhancers(
   applyMiddleware(
-    logMiddleware,
+    matchingMiddleware,
     // secondMiddleware,
   ),
 );

@@ -13,7 +13,7 @@ import './app.scss';
 // import ChatList from '../ChatList';
 // import MessagesList from '../ChatList/MessagesList';
 // import EditUserProfil from '../UserProfil/EditUserProfil';
-import Matching from '../Matching';
+import MatchingContainer from '../../containers/MatchingContainer';
 
 // == Composant
 const App = () => (
@@ -24,7 +24,7 @@ const App = () => (
     {/* <ChatList /> */}
     {/* <MessagesList /> */}
     {/* <EditUserProfil /> */}
-    <Matching />
+    <MatchingContainer />
   </div>
 );
 

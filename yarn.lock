@@ -1896,6 +1896,11 @@
     lodash "^4.17.15"
     lodash-es "^4.17.15"
 
+"@sandstreamdev/react-swipeable-list@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@sandstreamdev/react-swipeable-list/-/react-swipeable-list-0.5.0.tgz#3cdd407e95a0f829cedcc23047716b580e1288fe"
+  integrity sha512-tbbQoM+M3Z7s751PI/wK2lwfKKQCPinPIwJkkSWnf3oLPi+3EaU874FMDmMHKFBy1whDFdfamZZJWxJqfrOdFA==
+
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@sheerun/mutationobserver-shim/-/mutationobserver-shim-0.3.3.tgz#5405ee8e444ed212db44e79351f0c70a582aae25"
