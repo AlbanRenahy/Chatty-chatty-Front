@@ -16,7 +16,7 @@ import './app.scss';
 // import EditUserProfil from '../UserProfil/EditUserProfil';
 // import MatchingContainer from '../../containers/MatchingContainer';
 import Form from '../../components/ChatRoom/Form';
-import Messages from '../../components/ChatRoom/Messages';
+import Messages from '../../containers/ChatRoom/Messages';
 
 
 // == Composant
