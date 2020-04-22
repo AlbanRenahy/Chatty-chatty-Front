@@ -2,10 +2,10 @@
 import { connect } from 'react-redux';
 
  // == Import : local
-import Matching from '../components/Matching';
+import Matching from '../../components/Matching';
 
  // Action Creators
-import { doRequest } from '../store/reducer/matching.js';
+import { doRequest } from '../../store/reducer/matching.js';
 
 
  /* === State (datas) ===
