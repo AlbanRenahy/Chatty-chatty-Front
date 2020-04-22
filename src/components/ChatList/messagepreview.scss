@@ -1,22 +1,32 @@
 @import "../../styles/vars";
 
- .message-wrapper {
+.message-wrapper {
   padding: 0.6rem;
   background-color: $primaryColorLight;
 
-   &:hover {
-    box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.22);
+  &:hover {
+    background-color: $eventColorBlue;
   }
 
-   &.active {
-    border-right-color: #fd5068;
+  //  &.active {
+  //   border-right-color: #fd5068;
+  // }
+
+  .avatar-mini {
+    position: relative;
   }
 
-   & .user-card {
-    width: 70px;
+  & .user-card {
+    width: 50px;
   }
 
-   & .message-preview-container {
+  @media (min-width: $md) {
+    & .user-card {
+      width: 80px;
+    }
+  }
+
+  & .message-preview-container {
     padding: 0.6em;
     color: $textColor;
     line-height: 0.9em;
@@ -26,5 +36,6 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    font-size: 1rem;
   }
 }

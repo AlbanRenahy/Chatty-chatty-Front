@@ -11,11 +11,13 @@ import './messagepreview.scss';
  // == Composant
 const MessagePreview = () => (
   <div className="message-wrapper d-flex">
+    <div className="avatar-mini my-auto">
     <Image
       className="user-card"
       src='http://placeimg.com/500/500/people'
       roundedCircle
     />
+    </div>
     <div className="message-preview-container">
       <p>Je suis un message...</p>
 

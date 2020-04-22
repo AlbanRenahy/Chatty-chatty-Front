@@ -1,28 +1,22 @@
 // == Import : npm
-import React from 'react';
-import Image from 'react-bootstrap/Image';
+import React from "react";
+import Image from "react-bootstrap/Image";
 // import { NavLink } from 'react-router-dom';
 
- // == Import : local
- import MessagePreview from './MessagePreview';
+// == Import : local
+import MessagePreview from "./MessagePreview";
 
- // == Import : style
- import './scrollinglist.scss';
+// == Import : style
+import "./matchlist.scss";
 
-
- // == Composant
-const MessagesList = () => (
-    <div className="messages-list">
-    <MessagePreview />
-    <MessagePreview />
-    <MessagePreview />
-    <MessagePreview />
-    <MessagePreview />
-    <MessagePreview />
-    <MessagePreview />
-    <MessagePreview />
+// == Composant
+const MessagesList = ({ users }) => (
+  <div className="messages-list">
+    {users.map((user) => (
+      <MessagePreview key={user.username} />
+    ))}  
   </div>
 );
 
- // == Export
+// == Export
 export default MessagesList;

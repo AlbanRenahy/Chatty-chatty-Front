@@ -6,6 +6,7 @@ import { getMaxId } from "../../store/selectors";
 const initialState = {
   messages: messageData,
   messageValue: "",
+  currentUser: "TOto",
 };
 
 // == Types
@@ -20,18 +21,24 @@ const chatroom = (state = initialState, action = {}) => {
         messageValue: action.value,
       };
     case ADD_MESSAGE: {
-      const maxId = getMaxId(state.messages);
-      const newMessage = {
-        text: state.messageValue,
-        id: maxId + 1,
-      };
-      return {
-        ...state,
-        messages: [...state.messages, newMessage],
-        messageValue: "",
-      };
-    }
+      if (state.messageValue.trim().length > 0) {
+        const maxId = getMaxId(state.messages);
+        const newMessage = {
+          text: state.messageValue,
+          id: maxId + 1,
+        };
 
+        if (state.currentUser.trim().length > 0) {
+          newMessage.author = state.currentUser.trim();
+        }
+        return {
+          ...state,
+          messages: [...state.messages, newMessage],
+          messageValue: "",
+        };
+      }
+      break;
+    }
     default:
       return state;
   }
