@@ -13,7 +13,10 @@ import './app.scss';
 // import ChatList from '../ChatList';
 // import MessagesList from '../ChatList/MessagesList';
 // import EditUserProfil from '../UserProfil/EditUserProfil';
-import MatchingContainer from '../../containers/MatchingContainer';
+// import MatchingContainer from '../../containers/MatchingContainer';
+import Form from '../../components/ChatRoom/Form';
+import Messages from '../../components/ChatRoom/Messages';
+
 
 // == Composant
 const App = () => (
@@ -24,7 +27,9 @@ const App = () => (
     {/* <ChatList /> */}
     {/* <MessagesList /> */}
     {/* <EditUserProfil /> */}
-    <MatchingContainer />
+    {/* <MatchingContainer /> */}
+    <Messages />
+    <Form />
   </div>
 );
 
