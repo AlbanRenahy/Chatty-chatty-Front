@@ -13,4 +13,19 @@ export default [
       text: 'You there?? ',
       author: 'Bruce',
     },
+    {
+        id: 4,
+        text: 'You there WHATSSSSSUP NiGGA ?? ',
+        author: 'Bruce',
+      },
+      {
+        id: 5,
+        text: 'You there WHATSSSSSUP NiGGA ?? ',
+        author: 'Bruce',
+      },
+      {
+        id: 6,
+        text: 'You there WHATSSSSSUP NiGGA ?? ',
+        author: 'Bruce',
+      },
   ];
