@@ -2,9 +2,10 @@
 import React from 'react';
 
 // == Import : local
-import './app.scss';
+import messages from '../../data/messages';
 
 // == Import : style
+import './app.scss';
 
 // Import locaux
 // import Nav from '../../components/Nav';
@@ -28,7 +29,7 @@ const App = () => (
     {/* <MessagesList /> */}
     {/* <EditUserProfil /> */}
     {/* <MatchingContainer /> */}
-    <Messages />
+    <Messages messages={messages} />
     <Form />
   </div>
 );
