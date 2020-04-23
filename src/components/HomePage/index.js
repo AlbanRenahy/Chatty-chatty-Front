@@ -9,10 +9,10 @@ import { Carousel } from "react-bootstrap";
 import "./homePage.scss";
 
 // Import pictures:
-import homePageMobile from "../../data/homePage-mobile.jpg";
-import sideProject from "../../data/side-project.jpg";
-import bangkokBreakfast from "../../data/bangkok-breakfast.jpg";
-import pizza from "../../data/pizza.jpg";
+import homePageMobile from "../../data/pictures/homePage-mobile.jpg";
+import sideProject from "../../data/pictures/side-project.jpg";
+import bangkokBreakfast from "../../data/pictures/bangkok-breakfast.jpg";
+import pizza from "../../data/pictures/pizza.jpg";
 import logo from "../../data/logo.png";
 
 // == Composant

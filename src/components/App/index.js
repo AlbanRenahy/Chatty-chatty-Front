@@ -17,8 +17,8 @@ import './app.scss';
 // import MatchingContainer from '../../containers/MatchingContainer';
 // import Form from '../../containers/ChatRoom/Form';
 // import Messages from '../../containers/ChatRoom/Messages';
-// import Matrix from '../../components/Matrix';
-import Location from '../../components/Location';
+import Page from '../../components/Page'
+
 
 
 // == Composant
@@ -33,8 +33,7 @@ const App = () => (
     {/* <MatchingContainer /> */}
     {/* <Messages messages={messages} />
     <Form /> */}
-    {/* <Matrix /> */}
-    <Location />
+    <Page logged={true} />
   </div>
 );
 
