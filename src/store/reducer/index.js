@@ -10,6 +10,7 @@ import matching from './matching';
 import chatroom from './chatroom';
 import matchlistReducer from './matchlistReducer.js';
 import chatlistReducer from './chatlistReducer';
+import matrix from './matrixReducer';
 
 // combineReducers returns us the generated parent reducer
 // we must supply an object as parameter
@@ -24,6 +25,7 @@ const reducer = combineReducers({
   chatroom,
   matchlistReducer,
   chatlistReducer,
+  matrix,
 });
 
 export default reducer;
