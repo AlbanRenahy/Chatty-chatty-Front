@@ -19,7 +19,6 @@ import logo from "../../data/logo.png";
 const HomePage = () => (
   <>
     <div id="home">
-      <div className="mainHome">
         <Carousel>
           <Carousel.Item>
             <img className="img-fluid" src={logo} />
@@ -85,7 +84,6 @@ const HomePage = () => (
       <div className="footerHome">
         <p>Trouves ici ton perfect Dev-Match pour staffer tes projets</p>
         <Button variant="info"> S'identifier via Github </Button>
-      </div>
     </div>
   </>
 );
