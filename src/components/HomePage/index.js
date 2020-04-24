@@ -1,5 +1,6 @@
 // == Import : npm
 import React from "react";
+import { NavLink } from 'react-router-dom';
 
 // imports styles
 import { Button } from "react-bootstrap";
@@ -83,7 +84,7 @@ const HomePage = () => (
       </div>
       <div className="footerHome">
         <p>Trouves ici ton perfect Dev-Match pour staffer tes projets</p>
-        <Button variant="info"> S'identifier via Github </Button>
+        <Button variant="info"> <NavLink to="/profil/">Se connecter</NavLink></Button>
     </div>
   </>
 );

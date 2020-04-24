@@ -2,7 +2,6 @@
 
 #home {
   font-family: 'Oswald', sans-serif;
-  height: 100vh;
 
   @media (min-width: $sm) {
     font-size: 1.2em;
@@ -26,7 +25,6 @@
 
 .img-fluid {
   top: .5rem;
-  width: 17rem;
   margin: 0 0 0 3.1rem;
   position: absolute;
 }

@@ -7,12 +7,13 @@
   width: 270px;
   margin: 3rem auto;
   //background-color: $primaryColorLight !important;
+  background-color: transparent !important;
   background: repeating-linear-gradient(
     45deg,
     $primaryColor,
     $primaryColor 10px,
-    $primaryColorLight 10px,
-    $primaryColorLight 30px
+    $primaryColorVeryLight 10px,
+    $primaryColorVeryLight 30px
   );
   border-radius: 0.75rem !important;
   cursor: pointer;
@@ -82,7 +83,7 @@
     width: 90%;
     height: 60%;
     margin: -4.3% auto;
-    background-color: #d7d2d5;
+    background-color: #8c99a6;
     border-radius: 5px;
 
     position: relative;
@@ -112,18 +113,22 @@
 
     &-btn {
       background-color: $linkColor !important;
+      padding: 0.2rem;
       border-radius: 5px;
+      border: 0;
       position: relative;
-      font-size: 0.7rem !important;
+      font-size: 0.8rem !important;
       margin-top: 6rem;
-      left: 2.3rem;
+      left: 2.1rem;
       @media screen and (device-aspect-ratio: 40/71) {
         font-size: 0.7rem !important;
         margin-top: 6rem;
+        left: 2.7rem;
       }
 
       @media screen and (min-width: 425px) {
         margin: 37% auto 3%;
+        left: 2.7rem;
       }
     }
 
@@ -132,6 +137,7 @@
       font-size: 0.8rem;
       position: relative;
       text-align: center;
+      margin-top: 0.4rem;
 
       @media screen and (device-aspect-ratio: 40/71) {
         font-size: 0.7rem !important;

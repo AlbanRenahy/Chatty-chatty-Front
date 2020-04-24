@@ -19,7 +19,6 @@ const MatchList = ({ users }) => (
         src="http://placeimg.com/150/150/people"
         roundedCircle
         key={user.username} />
-      />
       </NavLink>
     ))}
   </div>

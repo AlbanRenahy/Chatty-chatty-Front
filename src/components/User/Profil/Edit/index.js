@@ -101,15 +101,8 @@ class  UserProfilEdit extends React.Component {
     } = this.state;
     return (
       <div className="edit-profil">
-        <Nav nav="close-right" title="Éditer mon profil" />
         <Container className="text-left">
         <Header userName={userName} avatar={avatar} />
-          <Row>
-            <Col>
-              <h2>Hello {userName}</h2>
-              <p>Bienvenue sur l'édition de ton profil.</p>
-            </Col>
-          </Row>
           <Form>
             <h3>Les infos de ton profil</h3>
             <Form.Group controlId="formFirstName">

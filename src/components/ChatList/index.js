@@ -3,7 +3,7 @@ import React from 'react';
 
  // == Import : local
 // import MenuNav from './Menu';
-import Nav from 'src/components/Nav';
+import Nav from '../Nav';
 import MatchList from './MatchList';
 import MessagesList from './MessagesList';
 

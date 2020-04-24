@@ -2,6 +2,7 @@
 import React from "react";
 import { MdEdit, MdSettings } from "react-icons/md";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 // import PropTypes from 'prop-types';
 
 // == Import : local
@@ -13,20 +14,21 @@ const UserProfil = () => {
   const userName = "myGithubName";
   return (
     <div className="user-profil">
-      <Nav nav="back-right" />
       <Container className="user-profil-info">
         <Row>
           <Col>
             <h2 className="user-profil-info-user-name">{userName}</h2>
-            <Image
-              className="user-profil-info-avatar"
-              src="http://placeimg.com/100/100/people"
-              roundedCircle
-            />
+            <NavLink to="/profil/show">
+              <Image
+                className="user-profil-info-avatar"
+                src="http://placeimg.com/100/100/people"
+                roundedCircle
+              />
+            </NavLink>
             <p>
-              <MdEdit />{" "}
+              <MdEdit />
               <a className="user-profil-info--edit-link" href="#">
-                Édites ton profil
+                <NavLink to="/profil/edit">Édites ton profil</NavLink>
               </a>
             </p>
           </Col>
@@ -42,7 +44,7 @@ const UserProfil = () => {
               Aide et assistance
             </Button>
             <Button size="lg" variant="outline-secondary" block>
-              Règles d'utilisation
+              Régles d'utilisation
             </Button>
           </Col>
         </Row>
@@ -51,7 +53,7 @@ const UserProfil = () => {
         <Row>
           <Col>
             <Button size="lg" variant="danger" block>
-              Déconnexion
+              <NavLink to="/">Déconnexion</NavLink>
             </Button>
           </Col>
         </Row>

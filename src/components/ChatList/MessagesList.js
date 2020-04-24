@@ -1,6 +1,7 @@
 // == Import : npm
 import React from "react";
 import Image from "react-bootstrap/Image";
+import { NavLink } from "react-router-dom";
 // import { NavLink } from 'react-router-dom';
 
 // == Import : local
@@ -13,8 +14,10 @@ import "./matchlist.scss";
 const MessagesList = ({ users }) => (
   <div className="messages-list">
     {users.map((user) => (
-      <MessagePreview key={user.username} />
-    ))}  
+      <NavLink to="/chat/1">
+        <MessagePreview key={user.username} />
+      </NavLink>
+    ))}
   </div>
 );
 

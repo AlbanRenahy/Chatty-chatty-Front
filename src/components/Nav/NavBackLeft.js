@@ -1,5 +1,6 @@
 // imports npm
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 // imports locals
 import "./nav.scss";
@@ -9,8 +10,15 @@ import { Navbar } from "react-bootstrap";
 const NavBackLeft = () => (
   <Navbar className="chattychatty">
     <Navbar.Collapse className="justify-content-start">
-      <Navbar.Text className="icon" onClick={(e) => {console.log('>>> Back Button', e)}}>
-        <MdArrowBack />
+      <Navbar.Text
+        className="icon"
+        onClick={(e) => {
+          console.log(">>> Back Button", e);
+        }}
+      >
+        <NavLink to="/matching">
+          <MdArrowBack className="icon" />
+        </NavLink>
       </Navbar.Text>
     </Navbar.Collapse>
     <Navbar.Collapse>

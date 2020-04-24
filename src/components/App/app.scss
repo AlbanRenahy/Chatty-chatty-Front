@@ -2,11 +2,14 @@
 
 .app {
   font-family: $font;
-  height: 100vh;
   background-color: $primaryColorVeryLight;
 }
 
 body {
   height: 100vh;
+}
+
+html {
+  background-color: $primaryColorVeryLight;
 }
 

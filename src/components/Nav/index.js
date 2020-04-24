@@ -23,20 +23,20 @@ const Nav = (props) => {
   return (
     <>
       {/* use <Nav /> for Main Nav with user and matchs icons */}
-      {nav === "default" && <NavDefault />}
-      {/* use <Nav nav="back-left" /> for Nav for the
-            my profil / Matchs preferences with back button left */}
-      {nav === "back-left" && <NavBackLeft />}
-      {/* use <Nav nav="back-right" /> for  Nav for my profil edition with back button right */}
-      {nav === "back-right" && <NavBackRight title={title} />}
-      {/* use <Nav nav="close-right" /> for  Nav with close button right */}
-      {nav === "close-right" && <NavCloseRight />}
-      {/* use <Nav nav="close-left" /> for  Nav with close button left */}
-      {nav === "close-left" && <NavCloseLeft />}
+      { nav === 'default' && <NavDefault />}
       {/* use <Nav nav="logo" /> for displaying the Nav nar with the logo only */}
       { nav === 'logo' && <NavLogo />}
-       {/* use <Nav nav="close-left" /> for  Nav with close button left */}
-       { nav === 'chat' && <NavChat username={username} />}
+      {/* use <Nav nav="back-left" /> for Nav for the
+          my profil / Matchs preferences with back button left */}
+      { nav === 'back-left' && <NavBackLeft />}
+      {/* use <Nav nav="back-right" /> for  Nav for my profil edition with back button right */}
+      { nav === 'back-right' && <NavBackRight />}
+      {/* use <Nav nav="close-right" /> for  Nav with close button right */}
+      { nav === 'close-right' && <NavCloseRight title={title} />}
+      {/* use <Nav nav="close-left" /> for  Nav with close button left */}
+      { nav === 'close-left' && <NavCloseLeft />}
+      {/* use <Nav nav="close-left" /> for  Nav with close button left */}
+      { nav === 'chat' && <NavChat username={username} />}
     </>
   );
 };
