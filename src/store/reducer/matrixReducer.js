@@ -1,5 +1,5 @@
 // Import
-import prefs from '../../data/matchPreferences.js';
+import prefs from '../../data/wishes-table.js';
 
  // == Initial State
 const initialState = {

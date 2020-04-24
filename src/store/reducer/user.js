@@ -1,8 +1,12 @@
 import connectedUserData from '../../data/user-info';
+import levelsTable from '../../data/levels-table';
+import wishesTable from '../../data/wishes-table';
 
  // == Initial State
 const initialState = {
   ...connectedUserData,
+  levelsList: levelsTable,
+  wishesList: wishesTable,
 };
 
  // == Types
