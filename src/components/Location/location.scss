@@ -5,6 +5,7 @@
   width: 100%;
   padding: 1rem 0 1rem 0;
   background-color: $cardColor;
+  text-align: center;
 
   img {
     width: 80%;
@@ -14,8 +15,10 @@
 
  .location {
 
-   padding: 1.8rem;
+  padding: 1.8rem;
   background-color: $primaryColorLight;
+  font-size: 1.2em;
+  text-align: center;
 
    h2 {
     font-size: 1.3em;
