@@ -5,7 +5,7 @@ import { combineReducers } from 'redux';
 
 // we import each of the sub-reducers
 // import user from './user';
-import home from './home';
+import user from './user';
 import matching from './matching';
 import chatroom from './chatroom';
 import matchlistReducer from './matchlistReducer.js';
@@ -19,8 +19,7 @@ import matrix from './matrixReducer';
 
 const reducer = combineReducers({
   // user: user
-  // user,
-  home,
+  user,
   matching,
   chatroom,
   matchlistReducer,
