@@ -1,21 +1,36 @@
 @import "../../styles/vars";
 
+@import 'src/styles/vars';
+
 #matrix {
   color: rgb(233, 233, 233);
-  background-image: url(/src/data/Matrix.jpg);
+  background-image: url(/src/data/pictures/Matrix.jpg);
   background-size: cover;
-  height: 667px;
+  height: 100vh;
   padding: 2.5rem 0 0 0;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.2em;
   text-align: center;
 
+  @media (min-width: $sm) {
+      font-size: 1.8em;
+  }
+
   h3 {
     font-size: 1.3em;
+
+    @media (min-width: $sm) {
+      margin-top: 10rem;
+  }
+  }
+
+  p {
+    font-size: 0.6em;
+    margin-bottom: 0;
   }
 }
 
-.what {
+.what{
   padding: 3rem 0 1rem 0;
   font-size: 0.9em;
 }
@@ -28,7 +43,7 @@
   width: 100%;
   padding: 0 0 0 0.5rem;
   font-size: 0.7em;
-
+  
   div {
     margin: 1rem;
     color: rgb(61, 61, 61);
@@ -39,26 +54,33 @@
     margin: 0 8px 9px 0;
     border-radius: 0.3%;
 
+    &:hover {
+      transform: scale(1.02);
+      background-color: $eventColorBlue;
+      border-radius: 0.8%;
+    }
+
     p {
       line-height: 6.5rem;
       font-size: 1em;
+      
     }
   }
 }
 
-#next {
-  margin: 0.8rem 0 0 14rem;
+#next{
+  margin: 0.8rem 5rem 0 0;
   font-size: 1.3em;
+  text-align: right;
+
+  &:hover {
+    color: $eventColorBlue;
+  }
 }
 
-#logo {
+#logo_matrix{
   font-family: fantasy;
   color: rgb(158, 220, 245);
   font-size: 1em;
   margin: 3.8rem 0 0 0;
-}
-
-p {
-  font-size: 0.6em;
-  margin-bottom: 0;
 }

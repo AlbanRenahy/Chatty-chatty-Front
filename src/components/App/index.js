@@ -15,6 +15,7 @@ import './app.scss';
 // import MessagesList from '../ChatList/MessagesList';
 import EditUserProfil from '../User/Profil/Edit';
 import ShowUserProfil from '../../containers/User/Profil/Show';
+import UserMenu from '../../components/User/Menu';
 // import MatchingContainer from '../../containers/MatchingContainer';
 // import Form from '../../containers/ChatRoom/Form';
 // import Messages from '../../containers/ChatRoom/Messages';
@@ -26,7 +27,8 @@ import ShowUserProfil from '../../containers/User/Profil/Show';
 const App = () => (
   <div className="app">
     {/* <HomePage /> */}
-    {/* <UserProfil /> */}
+    {<UserMenu />}
+    <EditUserProfil />
     {/* <Nav /> */}
     {/* <ChatList /> */}
     {/* <MessagesList /> */}

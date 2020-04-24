@@ -3,6 +3,7 @@
 // All project colors
 $primaryColor :  #1A1647 ;
 $primaryColorLight : lighten(#1A1647, 10%);
+$primaryColorVeryLight : lighten(#1A1647, 15%);
 $cardColor :  #1d2c4e ;
 $eventColorPurple  :  #a11ec6 ;
 $eventColorBlue :  #92eaff ;
@@ -10,7 +11,7 @@ $linkColor : #a31ec8 ;
 $secondaryColor : #fff922 ;
 $textColor  : #fff ;
 $font : 'Roboto Mono', monospace;
-
+// $font : 'Space Mono', monospace;
 
 // Media queries
 $xs : 576px;
@@ -22,4 +23,4 @@ $xl : 2560px;
 
 // /!\ TIPS /!\
 
-// Put like this in a Scss file : @import 'src/styles/vars'; ; 
+// Put like this in a Scss file : @import 'src/styles/vars'; 

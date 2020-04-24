@@ -3,6 +3,7 @@ import React from 'react';
 
  // == Import : local
 // import MenuNav from './Menu';
+import Nav from 'src/components/Nav';
 import MatchList from './MatchList';
 import MessagesList from './MessagesList';
 
@@ -13,8 +14,8 @@ import users from './users';
 
  // == Composant
 const ChatList = () => (
-  <div className="messages">
-    {/* <MenuNav /> */}
+  <div className="chatlist">
+    {/* <Nav nav="chat" /> */}
     <MatchList users={users} />
     <MessagesList users={users} />
   </div>

@@ -1,9 +1,12 @@
 @import '../../styles/vars';
 
 .app {
-    font-size: 1.2em;
-    text-align: center;
-    font-family: $font;
-  }
-  
+  font-family: $font;
+  height: 100vh;
+  background-color: $primaryColorVeryLight;
+}
+
+body {
+  height: 100vh;
+}
 

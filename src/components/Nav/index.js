@@ -12,11 +12,13 @@ import NavCloseLeft from "./NavCloseLeft";
 import NavBackRight from "./NavBackRight";
 import NavBackLeft from "./NavBackLeft";
 import NavLogo from './NavLogo';
+import NavChat from './NavChat';
 
 // Component
 const Nav = (props) => {
   const { nav } = props;
   const { title } = props;
+  const { username } = props;
   console.log(nav);
   return (
     <>
@@ -33,6 +35,8 @@ const Nav = (props) => {
       {nav === "close-left" && <NavCloseLeft />}
       {/* use <Nav nav="logo" /> for displaying the Nav nar with the logo only */}
       { nav === 'logo' && <NavLogo />}
+       {/* use <Nav nav="close-left" /> for  Nav with close button left */}
+       { nav === 'chat' && <NavChat username={username} />}
     </>
   );
 };
@@ -40,6 +44,7 @@ const Nav = (props) => {
 Nav.propTypes = {
   nav: PropTypes.string,
   title: PropTypes.string,
+  username: PropTypes.string.isRequired,
 };
 
 Nav.defaultProps = {
