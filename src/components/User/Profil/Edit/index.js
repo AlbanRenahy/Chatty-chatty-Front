@@ -5,11 +5,10 @@ import { Typeahead } from "react-bootstrap-typeahead";
 // import PropTypes from 'prop-types';
 
 // == Import : local
-import "./user-profil.scss";
+// import "./user-profil.scss";
 import "./edit-profil.scss";
 // css for the Typeahead
 import "react-bootstrap-typeahead/css/Typeahead.css";
-import Nav from "../Nav";
 import {
   Container,
   Row,
@@ -20,8 +19,11 @@ import {
   FormControl,
 } from "react-bootstrap";
 
+import Nav from '../../../Nav';
+import Header from './Header';
+
 // == Composant
-class EditUserProfil extends React.Component {
+class  UserProfilEdit extends React.Component {
   state = {
     avatar:
       "https://avatars1.githubusercontent.com/u/55736796?s=400&u=6ad4f03adfa6c177f7c5c91ef5bda749908f9145&v=4",
@@ -64,7 +66,6 @@ class EditUserProfil extends React.Component {
   };
 
   handleAddUrl = () => {
-    // console.log(this.state.sharedNewUrl);
     let { sharedNewUrl } = this.state;
     let { sharedNewTitleUrl } = this.state;
     const { sharedUrl } = this.state;
@@ -102,6 +103,7 @@ class EditUserProfil extends React.Component {
       <div className="edit-profil">
         <Nav nav="close-right" title="Éditer mon profil" />
         <Container className="text-left">
+        <Header userName={userName} avatar={avatar} />
           <Row>
             <Col>
               <h2>Hello {userName}</h2>
@@ -252,4 +254,4 @@ class EditUserProfil extends React.Component {
  */
 
 // == Export
-export default EditUserProfil;
+export default UserProfilEdit;
