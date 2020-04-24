@@ -11,6 +11,7 @@ import NavCloseRight from "./NavCloseRight";
 import NavCloseLeft from "./NavCloseLeft";
 import NavBackRight from "./NavBackRight";
 import NavBackLeft from "./NavBackLeft";
+import NavLogo from './NavLogo';
 
 // Component
 const Nav = (props) => {
@@ -30,6 +31,8 @@ const Nav = (props) => {
       {nav === "close-right" && <NavCloseRight />}
       {/* use <Nav nav="close-left" /> for  Nav with close button left */}
       {nav === "close-left" && <NavCloseLeft />}
+      {/* use <Nav nav="logo" /> for displaying the Nav nar with the logo only */}
+      { nav === 'logo' && <NavLogo />}
     </>
   );
 };
