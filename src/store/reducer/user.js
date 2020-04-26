@@ -1,16 +1,19 @@
-// Import
-import prefs from '../../data/wishes-table.js';
+import connectedUserData from '../../data/user-info';
+import levelsTable from '../../data/levels-table';
+import wishesTable from '../../data/wishes-table';
 
  // == Initial State
 const initialState = {
-  prefs: prefs,
+  ...connectedUserData,
+  levelsList: levelsTable,
+  wishesList: wishesTable,
 };
 
  // == Types
 const DO_SOMETHING = 'DO_SOMETHING';
 
  // == Reducer
-const matrix = (state = initialState, action = {}) => {
+const user = (state = initialState, action = {}) => {
   switch (action.type) {
     case DO_SOMETHING:
       return {
@@ -34,4 +37,4 @@ export const doSomething = message => ({
 
 
  // == Export
-export default matrix; 
+export default user;

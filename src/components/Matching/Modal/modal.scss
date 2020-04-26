@@ -1,40 +1,46 @@
 // Import vars scss
 @import '../../../styles/vars';
 
- .mod {
+.mod {
   background-color: #fff;
 
-       &-header {
-        background-color: $primaryColorLight;
+      &-header {
+        background: repeating-linear-gradient(
+          45deg,
+          $primaryColor,
+          $primaryColor 10px,
+          $primaryColorLight 10px,
+          $primaryColorLight 30px
+        );
         color: $textColor;
       }
 
-       &-body {
+      &-body {
         background-color: $primaryColorLight;
 
-           &-img {
+          &-img {
             border: 2px solid $secondaryColor;
             height: 10rem;
             object-fit: cover;
             border-radius: 10px;
           }
 
-           &-name {
+          &-name {
             color: $textColor;
             font-size: 1.5rem;
           }
 
-           &-exp {
+          &-exp {
             color: $secondaryColor;
             font-size: 1rem;
           }
 
-           &-loc {
+          &-loc {
             color: $linkColor;
             font-size: 1rem;
           }
 
-           &-bio {
+          &-bio {
             background-color: transparent !important;
             overflow-wrap: break-word;
             padding: 1rem;
@@ -43,13 +49,13 @@
             border-radius: 10px !important;
           }
 
-           &-tag {
+          &-tag {
             margin-right: 1rem;
             background-color: transparent !important;
+            
+          }
 
-           }
-
-           &-link {
+          &-link {
             color: $linkColor;
             font-size: 1.3rem;
             opacity: 1.50 !important;
@@ -57,19 +63,25 @@
               font-size: 1rem;
             }
           }
+          
+      }
 
-       }
-
-       &-footer {
-        background-color: $primaryColorLight ;
-
-           &-btn {
+      &-footer {
+        background: repeating-linear-gradient(
+          45deg,
+          $primaryColor,
+          $primaryColor 10px,
+          $primaryColorLight 10px,
+          $primaryColorLight 30px
+        );
+        
+          &-btn {
             border: 2px solid $textColor !important;
             background-color: $primaryColorLight !important;
             color: $secondaryColor !important;
           }
+         
+      }
 
-       }
-
-
- }
+      
+}

@@ -1,6 +1,7 @@
 // imports npm
 import React from "react";
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
 // imports local
 import "./nav.scss";
@@ -10,24 +11,12 @@ import { Navbar } from "react-bootstrap";
 const NavCloseRight = ({ title }) => (
   <Navbar className="chattychatty">
     <Navbar.Collapse className="justify-content-right">
-      <Navbar.Text
-        className="navbar-title padding-right text-truncate"
-        onClick={(e) => {
-          console.log(">>> Back Button", e);
-        }}
-      >
-        {title}
-      </Navbar.Text>
+      <Navbar.Text className="navbar-title padding-right text-truncate">{title}</Navbar.Text>
     </Navbar.Collapse>
     <Navbar.Collapse className="justify-content-end">
-      <Navbar.Text
-        className="icon"
-        onClick={(e) => {
-          console.log(">>> Close Button", e);
-        }}
-      >
-        <MdClose />
-      </Navbar.Text>
+      <Navbar.Text 
+      onClick={(e) => {console.log('>>> Close Button', e)}}>
+      <NavLink to ="/profil"><MdClose className="icon" /></NavLink></Navbar.Text>
     </Navbar.Collapse>
   </Navbar>
 );

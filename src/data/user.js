@@ -6,7 +6,7 @@ const user = [
     name: "Anna",
     local: "Paris",
     img: {
-      src: "https://raw.githubusercontent.com/Developer-Musclay/Tindev/3063df398efe73cbd30940e6c0182ed8747b4439/src/data/girl.jpg",
+      src: "https://raw.githubusercontent.com/AlbanRenahy/Chatty-chatty-Front/2a2f8f9629d539abf088c18fee855cb488a199f3/src/data/girl.jpg",
       alt: "Anna",
     },
     exp: "Ninja",
@@ -30,7 +30,7 @@ const user = [
     name: "Alfred",
     local: "Quimper",
     img: {
-      src: "https://raw.githubusercontent.com/Developer-Musclay/Tindev/3063df398efe73cbd30940e6c0182ed8747b4439/src/data/man.jpg",
+      src: "https://raw.githubusercontent.com/AlbanRenahy/Chatty-chatty-Front/2a2f8f9629d539abf088c18fee855cb488a199f3/src/data/man.jpg",
       alt: "ALfred",
     },
     exp: "Noob",
@@ -54,7 +54,7 @@ const user = [
     name: "Antoinette",
     local: "Nantes",
     img: {
-      src: "https://raw.githubusercontent.com/Developer-Musclay/Tindev/3063df398efe73cbd30940e6c0182ed8747b4439/src/data/old.jpg",
+      src: "https://raw.githubusercontent.com/AlbanRenahy/Chatty-chatty-Front/2a2f8f9629d539abf088c18fee855cb488a199f3/src/data/old.jpg",
       alt: "Antoinette",
     },
     exp: "Noob",
