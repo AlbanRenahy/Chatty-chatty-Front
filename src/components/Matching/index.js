@@ -52,6 +52,27 @@ class Matching extends Component {
           
         }
 
+        /* like an user */
+        likeProfil = () => {
+          console.log("Like done")
+          const { doLike } = this.props;
+
+           if (this.state.end !== true) {
+            doLike ();
+          }
+        }
+
+         /* Unlike an user */
+        unlikeProfil = () => {
+          console.log("Unlike done")
+          const { doUnlike} = this.props;
+
+           if (this.state.end !== true) {
+            doUnlike();
+          }
+        }
+
+         /* Open the Modal */
         setModalShow = () => {
 
           this.setState({
@@ -60,6 +81,7 @@ class Matching extends Component {
           })
         }
 
+        /* Close the modal */
         unsetModalShow = () => {
 
           this.setState({
@@ -89,7 +111,8 @@ class Matching extends Component {
                 display: this.props.users[userIndex = userIndex <  userLength ? userIndex +1 : userIndex],
                 index: index +1
              }),
-             this.checkEnd()
+             this.checkEnd(),
+             this.unlikeProfil()
           )}}
         swipeRight={{
           content:<Image roundedCircle className="right" src={beerGif} />,
@@ -100,7 +123,8 @@ class Matching extends Component {
               display: this.props.users[userIndex = userIndex <  userLength ? userIndex +1 : userIndex],
               index: index +1
             }),
-            this.checkEnd()
+            this.checkEnd(),
+            this.likeProfil()
           )}}
       >
         {/******* The card swiped ******/}

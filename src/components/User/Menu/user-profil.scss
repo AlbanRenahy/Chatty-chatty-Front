@@ -1,57 +1,68 @@
 @import "../../../styles/vars";
 
-.user-profil {
-  background-color: white;
-  height: 100vh;
+.user-profil{
+  background: repeating-linear-gradient(
+  45deg,
+  $primaryColor,
+  $primaryColor 10px,
+  $primaryColorVeryLight 10px,
+  $primaryColorVeryLight 30px
+  );
+  min-height: 92vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  &-info {
+  &-info{
     text-align: center;
-    margin-top: 1rem;
-    &-user-name {
-      font-size: 1.5em;
+    margin-top:1rem;
+    &-user-name{
+      color: $textColor;
+      font-size:1.5em;
       font-weight: 700;
     }
-    &-avatar {
+    &-avatar{
       margin-bottom: 1rem;
     }
-    &--edit-link {
-      font-size: 1em;
+    &--edit-link{
+      font-size:1em;
     }
   }
-  &-navigation {
-    .btn {
-      font-size: 0.8em;
-      height: 46px;
-      &-primary {
+  &-navigation{
+    .btn{
+      font-size: 1em;
+      height:46px;
+      &-primary{
         background-color: $primaryColorLight;
         border: darken($primaryColorLight, 20%);
-        &:hover {
+        &:hover{
           background-color: lighten($primaryColorLight, 30%);
           border: darken($primaryColorLight, 50%);
         }
       }
       &-outline-secondary {
-        border-color: lighten($eventColorPurple, 30%);
-        color: lighten($eventColorPurple, 30%);
-        &:hover {
+        //border-color: lighten($eventColorPurple, 30%);
+        //color: lighten($eventColorPurple, 30%);
+        background-color: $eventColorPurple;
+        color: $textColor;
+        &:hover{
           border-color: darken($eventColorPurple, 10%);
           color: darken($eventColorPurple, 20%);
           background-color: rgb(238, 238, 238);
         }
       }
     }
-    .icon {
+    .icon{
       font-size: 1.6rem;
     }
   }
-  &-disconnect {
-    margin-bottom: 0.8rem;
-    .btn-danger {
-      background-color: $eventColorPurple;
-      border: darken($eventColorPurple, 10%);
+  &-disconnect{
+    margin-bottom: .8rem;
+    .btn-danger{
+      background-color: transparent !important;
+      border-color: lighten($eventColorPurple, 30%) !important;
+      border: 3px solid darken($eventColorPurple, 10%) !important;
     }
   }
 }

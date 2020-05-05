@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Matching from '../../components/Matching';
 
  // Action Creators
-import { doRequest } from '../../store/reducer/matching.js';
+import { doRequest, doLike, doUnlike } from '../../store/reducer/matching.js';
 
 
  /* === State (datas) ===
@@ -30,6 +30,14 @@ const mapDispatchToProps = ( dispatch ) => ({
   doRequest: () => {
       const action = doRequest();
       dispatch(action);
+    },
+    doLike: () => {
+        const action = doLike();
+        dispatch(action)
+    },
+    doUnlike: () => {
+        const action = doUnlike();
+        dispatch(action)
   }
 });
 
